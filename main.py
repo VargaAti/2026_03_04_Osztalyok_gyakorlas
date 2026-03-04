@@ -24,16 +24,14 @@ for i in autok:
 
 print(f"az autók átlagéletkora: {st.mean(autok_kora)} év")
 
-
-
 legiosebb_auto = autok_kora.index(max(autok_kora))
 print(f"A legöregebb autó: {autok[legiosebb_auto].marka} {autok[legiosebb_auto].tipus}, {autok_kora[legiosebb_auto]} éves")
 
-# print(auto1)
-# print(auto2)
+#A version
 
-# auto1.gyorsit(250)
-# print(auto1)
 
-# auto1.fekez(50)
-# print(auto1)
+#C version
+# gyartasi_evek = [auto.gyartasi_ev for auto in autok]
+# for auto in autok:
+#     if auto.gyartasi_ev == min(gyartasi_evek):
+#         print(f"A legidősebb autó: {auto.marka} {auto.tipus}")
