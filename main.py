@@ -6,8 +6,9 @@ auto1 = Auto("Toyota", "Corolla", 2015,)
 auto2 = Auto("Ford", "Focus", 2018)
 auto3 = Auto("Volkswagen", "Bora", 2004)
 auto4 = Auto("Suzuki", "Ignis", 2016)
+auto5 = Auto("Suzuki", "Ignis", 2016, 6.5)
 
-autok = [auto1, auto2, auto3, auto4]
+autok = [auto1, auto2, auto3, auto4, auto5]
 
 for i in autok:
     print(i)
@@ -35,3 +36,9 @@ print(f"A legöregebb autó: {autok[legiosebb_auto].marka} {autok[legiosebb_auto
 # for auto in autok:
 #     if auto.gyartasi_ev == min(gyartasi_evek):
 #         print(f"A legidősebb autó: {auto.marka} {auto.tipus}")
+
+print(auto5)
+auto5.utazik(200)
+print(auto5)
+auto5.tankol(10)
+print(auto5)
